@@ -66,6 +66,44 @@ export default function Home() {
           </div>
         </section>
 
+        {/* About Section */}
+        <section className="py-16 sm:py-24 bg-gradient-to-b from-accent-soft to-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+                  Astrology: Your Guide To Life's<br />
+                  <span className="text-accent">Journey & Path To Success!</span>
+                </h2>
+                <p className="text-lg text-muted mb-6 leading-relaxed">
+                  We believe astrology is pure science, and we aim to create such a social impact on you that science and astrology through its resources of the astrology chart, kundali, etc. As we step into our journey, we strive to build a community where we are a part of your daily routine right from our astrology by date of birth, name, time, palm reading, and face reading, to all other online astrology, numerology, and Vastu services.
+                </p>
+                <div className="flex items-center gap-4 p-6 bg-white rounded-xl border-2 border-accent/20">
+                  <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                    <span className="text-3xl">🏆</span>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-accent">{siteConfig.stats[0].value}</div>
+                    <div className="text-sm text-muted">With Vastu, Kundali, And Predictions</div>
+                  </div>
+                </div>
+              </div>
+              <div className="relative">
+                <div className="aspect-square rounded-2xl bg-gradient-to-br from-amber-200 via-orange-300 to-amber-400 p-1">
+                  <div className="w-full h-full rounded-2xl bg-card flex items-center justify-center">
+                    <div className="text-center px-6">
+                      <div className="text-7xl mb-4">🕉️</div>
+                      <p className="text-xl font-semibold text-foreground mb-2">Astro Hema</p>
+                      <p className="text-sm text-muted">Expert in Vedic Astrology</p>
+                      <p className="text-sm text-muted mt-4">Vastu, Kundali & Numerology Specialist</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Services */}
         <section className="py-16 sm:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -178,6 +216,64 @@ export default function Home() {
           </div>
         </section>
 
+        {/* FAQ Section */}
+        <section className="py-16 sm:py-24 bg-accent-soft">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+                Frequently Asked <span className="text-accent">Questions</span>
+              </h2>
+            </div>
+            <div className="space-y-4">
+              <details className="bg-card rounded-xl border border-accent/10 overflow-hidden group">
+                <summary className="px-6 py-4 font-semibold text-foreground cursor-pointer hover:bg-accent-soft transition-colors flex justify-between items-center">
+                  <span>How can I book a consultation?</span>
+                  <span className="text-accent group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <div className="px-6 pb-4 text-muted">
+                  You can book a consultation by calling us at {siteConfig.contact.phone} or messaging us on WhatsApp. We'll schedule a convenient time for your personalized session.
+                </div>
+              </details>
+              <details className="bg-card rounded-xl border border-accent/10 overflow-hidden group">
+                <summary className="px-6 py-4 font-semibold text-foreground cursor-pointer hover:bg-accent-soft transition-colors flex justify-between items-center">
+                  <span>What information do I need for a Kundali reading?</span>
+                  <span className="text-accent group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <div className="px-6 pb-4 text-muted">
+                  For an accurate Kundali reading, we need your exact date of birth, time of birth, and place of birth. The more accurate the information, the more precise the analysis will be.
+                </div>
+              </details>
+              <details className="bg-card rounded-xl border border-accent/10 overflow-hidden group">
+                <summary className="px-6 py-4 font-semibold text-foreground cursor-pointer hover:bg-accent-soft transition-colors flex justify-between items-center">
+                  <span>How long does a consultation take?</span>
+                  <span className="text-accent group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <div className="px-6 pb-4 text-muted">
+                  A standard consultation typically takes 30-45 minutes, depending on the complexity of your questions and the depth of analysis required. We ensure you have enough time to discuss all your concerns.
+                </div>
+              </details>
+              <details className="bg-card rounded-xl border border-accent/10 overflow-hidden group">
+                <summary className="px-6 py-4 font-semibold text-foreground cursor-pointer hover:bg-accent-soft transition-colors flex justify-between items-center">
+                  <span>Do you provide online consultations?</span>
+                  <span className="text-accent group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <div className="px-6 pb-4 text-muted">
+                  Yes! We offer online consultations via phone or video call for clients who cannot visit in person. The quality and depth of consultation remains the same.
+                </div>
+              </details>
+              <details className="bg-card rounded-xl border border-accent/10 overflow-hidden group">
+                <summary className="px-6 py-4 font-semibold text-foreground cursor-pointer hover:bg-accent-soft transition-colors flex justify-between items-center">
+                  <span>What is the consultation fee?</span>
+                  <span className="text-accent group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <div className="px-6 pb-4 text-muted">
+                  Consultation fees vary based on the type of service. Please call us or message on WhatsApp for detailed pricing information.
+                </div>
+              </details>
+            </div>
+          </div>
+        </section>
+
         {/* Contact Section */}
         <section className="py-16 sm:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -242,7 +338,7 @@ export default function Home() {
               </div>
               <div className="bg-card rounded-2xl p-8 border border-accent/10">
                 <h3 className="text-2xl font-semibold text-foreground mb-6">Send us a message</h3>
-                <form className="space-y-4">
+                <form action="https://formspree.io/f/xanyqveo" method="POST" className="space-y-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
                       Your Name
@@ -250,6 +346,8 @@ export default function Home() {
                     <input
                       type="text"
                       id="name"
+                      name="name"
+                      required
                       className="w-full px-4 py-3 rounded-lg border border-accent/20 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20"
                       placeholder="Enter your name"
                     />
@@ -261,6 +359,8 @@ export default function Home() {
                     <input
                       type="tel"
                       id="phone"
+                      name="phone"
+                      required
                       className="w-full px-4 py-3 rounded-lg border border-accent/20 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20"
                       placeholder="+91"
                     />
@@ -271,9 +371,11 @@ export default function Home() {
                     </label>
                     <select
                       id="service"
+                      name="service"
+                      required
                       className="w-full px-4 py-3 rounded-lg border border-accent/20 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20"
                     >
-                      <option>Select a service</option>
+                      <option value="">Select a service</option>
                       <option>Kundali Analysis</option>
                       <option>Vastu Consultation</option>
                       <option>Match Making</option>
@@ -287,6 +389,7 @@ export default function Home() {
                     </label>
                     <textarea
                       id="message"
+                      name="message"
                       rows={4}
                       className="w-full px-4 py-3 rounded-lg border border-accent/20 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20"
                       placeholder="Tell us about your requirements"
@@ -322,9 +425,28 @@ export default function Home() {
                 </div>
                 <span className="text-xl font-semibold">Astro Hema</span>
               </div>
-              <p className="text-sm opacity-80">
+              <p className="text-sm opacity-80 mb-4">
                 Authentic Vedic astrology and Vastu consultations for modern families.
               </p>
+              <div className="mt-6">
+                <h4 className="font-semibold mb-3 text-sm">Subscribe to Our Newsletter</h4>
+                <form action="https://formspree.io/f/xanyqveo" method="POST" className="flex gap-2">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                    className="flex-1 px-3 py-2 rounded-lg bg-white/10 border border-white/20 text-white placeholder:text-white/60 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                  />
+                  <input type="hidden" name="_subject" value="Newsletter Subscription" />
+                  <button
+                    type="submit"
+                    className="px-4 py-2 bg-accent text-white rounded-lg hover:bg-accent/90 transition-colors text-sm font-medium"
+                  >
+                    Subscribe
+                  </button>
+                </form>
+              </div>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Quick Links</h4>
