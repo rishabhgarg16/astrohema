@@ -66,7 +66,7 @@ export default function CoursesPage() {
 
       <main>
         {/* Hero */}
-        <section className="relative overflow-hidden bg-gradient-to-r from-sky-900 via-indigo-900 to-sky-800 text-white">
+        <section className="relative overflow-hidden bg-gradient-to-r from-orange-900 via-amber-800 to-orange-700 text-white">
           <div className="absolute inset-0 opacity-40">
             <div className="absolute -left-40 top-10 w-96 h-96 rounded-full border border-white/10" />
             <div className="absolute -right-20 bottom-0 w-[28rem] h-[28rem] rounded-full border border-white/15" />
@@ -82,7 +82,7 @@ export default function CoursesPage() {
                   Be Master &amp; Make Career in{" "}
                   <span className="text-sky-300">Occult Science</span>
                 </h1>
-                <p className="text-base sm:text-lg text-sky-100/90 max-w-xl">
+                <p className="text-base sm:text-lg text-amber-100/95 max-w-xl">
                   Learn Astrology, Numerology, Tarot, Vastu and Lal Kitab in a
                   structured way with live guidance and practical case studies.
                 </p>
@@ -91,9 +91,9 @@ export default function CoursesPage() {
                     (item) => (
                       <li
                         key={item}
-                        className="flex items-center gap-2 text-sky-100"
+                        className="flex items-center gap-2 text-amber-50"
                       >
-                        <span className="w-5 h-5 rounded-full border border-sky-300 flex items-center justify-center text-xs">
+                        <span className="w-5 h-5 rounded-full border border-amber-300 flex items-center justify-center text-xs">
                           ✓
                         </span>
                         <span>{item}</span>
@@ -104,13 +104,13 @@ export default function CoursesPage() {
                 <div className="flex flex-wrap gap-3 pt-4">
                   <a
                     href="#lead-form"
-                    className="inline-flex items-center justify-center gap-2 rounded-full bg-sky-400 text-sky-950 font-semibold px-6 py-3 text-sm sm:text-base hover:bg-sky-300 transition-colors"
+                    className="inline-flex items-center justify-center gap-2 rounded-full bg-amber-300 text-orange-950 font-semibold px-6 py-3 text-sm sm:text-base hover:bg-amber-200 transition-colors"
                   >
                     Explore Courses
                   </a>
                   <a
                     href={`tel:${siteConfig.contact.phone}`}
-                    className="inline-flex items-center justify-center gap-2 rounded-full border border-sky-300 text-sky-100 font-medium px-6 py-3 text-sm sm:text-base hover:bg-white/10 transition-colors"
+                    className="inline-flex items-center justify-center gap-2 rounded-full border border-amber-200 text-amber-50 font-medium px-6 py-3 text-sm sm:text-base hover:bg-white/10 transition-colors"
                   >
                     <span>📞</span>
                     <span>Talk to Team</span>
@@ -119,17 +119,17 @@ export default function CoursesPage() {
               </div>
               <div className="order-1 lg:order-2 flex justify-center">
                 <div className="relative w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72">
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-sky-300 via-amber-200 to-sky-500 opacity-80 blur-2xl" />
-                  <div className="relative w-full h-full rounded-full border-4 border-white/40 bg-card/10 flex items-center justify-center">
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-300 via-orange-300 to-amber-500 opacity-80 blur-2xl" />
+                  <div className="relative w-full h-full rounded-full border-4 border-amber-100/70 bg-card/10 flex items-center justify-center">
                     <div className="text-center px-4">
                       <div className="text-5xl mb-3">📚</div>
                       <p className="text-lg font-semibold">
                         Astro Hema Courses
                       </p>
-                      <p className="text-xs text-sky-100/90 mt-1">
+                      <p className="text-xs text-amber-50/95 mt-1">
                         Live + Recorded sessions
                       </p>
-                      <p className="text-xs text-sky-100/80 mt-1">
+                      <p className="text-xs text-amber-50/90 mt-1">
                         Beginner to Advanced Levels
                       </p>
                     </div>

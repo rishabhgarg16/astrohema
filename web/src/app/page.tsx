@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { siteConfig } from "@/data/site-config";
+import { HomeHero } from "@/components/home-hero";
 
 export default function Home() {
   return (
@@ -11,8 +11,23 @@ export default function Home() {
             <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
               <span className="text-xl">✨</span>
             </div>
-            <span className="text-xl font-semibold text-foreground">{siteConfig.name}</span>
+            <span className="text-xl font-semibold text-foreground">
+              {siteConfig.name}
+            </span>
           </div>
+
+          <div className="hidden md:flex items-center gap-6 text-sm font-medium">
+            <a href="/" className="text-accent border-b-2 border-accent pb-1">
+              Home
+            </a>
+            <a
+              href="/courses"
+              className="text-muted hover:text-accent transition-colors pb-1"
+            >
+              Courses
+            </a>
+          </div>
+
           <div className="flex gap-3">
             <a
               href={`tel:${siteConfig.contact.phone}`}
@@ -35,71 +50,7 @@ export default function Home() {
       </header>
 
       <main>
-        {/* Hero Section */}
-        <section className="relative py-16 sm:py-24 overflow-hidden">
-          <div className="absolute inset-0 opacity-5">
-            <div className="absolute top-10 left-10 w-64 h-64 border-2 border-accent rounded-full"></div>
-            <div className="absolute bottom-20 right-20 w-96 h-96 border border-accent/30 rounded-full"></div>
-          </div>
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="space-y-6">
-                <div className="inline-block px-4 py-2 bg-accent-soft border border-accent/20 rounded-full text-sm font-medium text-accent">
-                  Trusted by 500+ Families
-                </div>
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
-                  {siteConfig.tagline.split("Vastu, Kundali")[0]}
-                  <span className="text-accent">Vastu, Kundali</span>
-                  {siteConfig.tagline.split("Vastu, Kundali")[1]}
-                </h1>
-                <p className="text-lg sm:text-xl text-muted leading-relaxed">
-                  {siteConfig.description}
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                  <a
-                    href={`tel:${siteConfig.contact.phone}`}
-                    className="flex items-center justify-center gap-3 px-8 py-4 bg-accent text-white text-lg font-semibold rounded-full hover:bg-accent/90 transition-all hover:scale-105"
-                  >
-                    <span className="text-2xl">📞</span>
-                    <span>Call for Consultation</span>
-                  </a>
-                  <a
-                    href={`https://wa.me/${siteConfig.contact.whatsapp}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-3 px-8 py-4 bg-white border-2 border-accent text-accent text-lg font-semibold rounded-full hover:bg-accent-soft transition-all"
-                  >
-                    <span className="text-2xl">💬</span>
-                    <span>WhatsApp Us</span>
-                  </a>
-                </div>
-                <div className="flex items-center gap-6 pt-6 text-sm text-muted">
-                  <div className="flex items-center gap-2">
-                    <span className="text-accent text-xl">✓</span>
-                    <span>10+ Years Experience</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-accent text-xl">✓</span>
-                    <span>Hindi & English</span>
-                  </div>
-                </div>
-              </div>
-              <div className="relative">
-                <div className="relative w-full aspect-square max-w-md mx-auto">
-                  <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent rounded-full"></div>
-                  <div className="relative w-full h-full rounded-full border-4 border-accent/20 flex items-center justify-center bg-card">
-                    <div className="text-center p-8">
-                      <div className="text-6xl mb-4">🪔</div>
-                      <p className="text-xl font-semibold text-foreground">Astro Hema</p>
-                      <p className="text-muted mt-2">Certified Astrologer</p>
-                      <p className="text-sm text-muted mt-1">Vastu & Kundali Expert</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <HomeHero />
 
         {/* Trust Metrics */}
         <section className="py-12 bg-accent text-white">
