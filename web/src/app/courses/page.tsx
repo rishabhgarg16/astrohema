@@ -189,23 +189,48 @@ export default function CoursesPage() {
                     dates, fees, syllabus and offers.
                   </p>
                 </div>
-                <form className="grid gap-4 sm:grid-cols-2">
+                {/* 
+                  NOTE:
+                  Replace FORM_ENDPOINT below with your real endpoint from a form service like Formspree.
+                  Example (after creating a form on Formspree):
+                  const FORM_ENDPOINT = "https://formspree.io/f/abcdxyz";
+                */}
+                <form
+                  className="grid gap-4 sm:grid-cols-2"
+                  method="POST"
+                  action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+                >
+                  <input
+                    type="hidden"
+                    name="_subject"
+                    value="New Astro Hema course enquiry"
+                  />
                   <div className="sm:col-span-1">
-                    <label className="block text-sm font-medium text-foreground mb-1">
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium text-foreground mb-1"
+                    >
                       Name
                     </label>
                     <input
+                      id="name"
                       type="text"
+                      name="name"
                       className="w-full rounded-lg border border-accent/20 px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent"
                       placeholder="Enter your full name"
                     />
                   </div>
                   <div className="sm:col-span-1">
-                    <label className="block text-sm font-medium text-foreground mb-1">
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium text-foreground mb-1"
+                    >
                       Email
                     </label>
                     <input
+                      id="email"
                       type="email"
+                      name="email"
                       className="w-full rounded-lg border border-accent/20 px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent"
                       placeholder="you@example.com"
                     />
@@ -215,23 +240,34 @@ export default function CoursesPage() {
                       Phone No.
                     </label>
                     <div className="flex gap-2">
-                      <select className="w-24 rounded-lg border border-accent/20 px-2 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent">
+                      <select
+                        name="countryCode"
+                        className="w-24 rounded-lg border border-accent/20 px-2 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent"
+                      >
                         <option>+91</option>
                         <option>+971</option>
                         <option>+1</option>
                       </select>
                       <input
                         type="tel"
+                        name="phone"
                         className="flex-1 rounded-lg border border-accent/20 px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent"
                         placeholder="Your WhatsApp number"
                       />
                     </div>
                   </div>
                   <div className="sm:col-span-1">
-                    <label className="block text-sm font-medium text-foreground mb-1">
+                    <label
+                      htmlFor="course"
+                      className="block text-sm font-medium text-foreground mb-1"
+                    >
                       Select Course
                     </label>
-                    <select className="w-full rounded-lg border border-accent/20 px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent">
+                    <select
+                      id="course"
+                      name="course"
+                      className="w-full rounded-lg border border-accent/20 px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent"
+                    >
                       <option>Choose a course</option>
                       {courseSections.flatMap((section) =>
                         section.courses.map((course) => (
@@ -241,11 +277,16 @@ export default function CoursesPage() {
                     </select>
                   </div>
                   <div className="sm:col-span-2">
-                    <label className="block text-sm font-medium text-foreground mb-1">
+                    <label
+                      htmlFor="message"
+                      className="block text-sm font-medium text-foreground mb-1"
+                    >
                       Message
                     </label>
                     <textarea
+                      id="message"
                       rows={4}
+                      name="message"
                       className="w-full rounded-lg border border-accent/20 px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent"
                       placeholder="Share your learning goals or questions (optional)"
                     ></textarea>
