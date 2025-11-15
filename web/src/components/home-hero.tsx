@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { siteConfig } from "@/data/site-config";
 
@@ -9,6 +10,8 @@ type HeroSlide = {
   titleRest: string;
   description: string;
   bullets: string[];
+  imageSrc?: string;
+  imageAlt?: string;
 };
 
 const slides: HeroSlide[] = [
@@ -126,26 +129,60 @@ export function HomeHero() {
             <div className="relative w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72">
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-300 via-orange-400 to-amber-500 opacity-80 blur-2xl" />
               <div className="relative w-full h-full rounded-full border-4 border-amber-200 bg-card/80 shadow-xl flex items-center justify-center">
-                <div className="text-center px-6">
-                  <div className="text-5xl mb-3">🕉️</div>
-                  <p className="text-lg sm:text-xl font-semibold text-foreground">
-                    {siteConfig.name}
-                  </p>
-                  <p className="text-xs sm:text-sm text-muted mt-1">
-                    Vastu, Kundali &amp; Astrology Expert
-                  </p>
-                  <p className="text-xs text-muted mt-2">
-                    1:1 personalised guidance for your home, career and
-                    relationships.
-                  </p>
-                </div>
+                {slide.imageSrc ? (
+                  <Image
+                    src={slide.imageSrc}
+                    alt={slide.imageAlt ?? siteConfig.name}
+                    fill
+                    className="rounded-full object-cover"
+                    sizes="(min-width: 1024px) 18rem, 16rem"
+                  />
+                ) : (
+                  <div className="text-center px-6">
+                    <div className="text-5xl mb-3">🕉️</div>
+                    <p className="text-lg sm:text-xl font-semibold text-foreground">
+                      {siteConfig.name}
+                    </p>
+                    <p className="text-xs sm:text-sm text-muted mt-1">
+                      Vastu, Kundali &amp; Astrology Expert
+                    </p>
+                    <p className="text-xs text-muted mt-2">
+                      1:1 personalised guidance for your home, career and
+                      relationships.
+                    </p>
+                  </div>
+                )}
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Arrow controls */}
+      <div className="pointer-events-none absolute inset-y-0 left-0 right-0 flex items-center justify-between px-4 sm:px-6 lg:px-8">
+        <button
+          type="button"
+          onClick={() =>
+            setActiveIndex(
+              (prev) => (prev - 1 + slides.length) % slides.length,
+            )
+          }
+          className="pointer-events-auto hidden sm:inline-flex h-10 w-10 items-center justify-center rounded-full bg-card/80 border border-accent/20 text-accent shadow-sm hover:bg-accent-soft transition-colors"
+          aria-label="Previous slide"
+        >
+          ‹
+        </button>
+        <button
+          type="button"
+          onClick={() =>
+            setActiveIndex((prev) => (prev + 1) % slides.length)
+          }
+          className="pointer-events-auto hidden sm:inline-flex h-10 w-10 items-center justify-center rounded-full bg-card/80 border border-accent/20 text-accent shadow-sm hover:bg-accent-soft transition-colors"
+          aria-label="Next slide"
+        >
+          ›
+        </button>
+      </div>
     </section>
   );
 }
-
-
