@@ -105,60 +105,132 @@ export default function Home() {
         </section>
 
         {/* In The Media Section */}
-        <section className="py-12 bg-white border-y border-accent/10">
+        <section className="py-12 bg-white border-y border-accent/10 overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8">
               <h3 className="text-lg sm:text-xl font-semibold text-muted mb-6">
                 As Featured In
               </h3>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 items-center justify-items-center">
-              <div className="flex items-center justify-center h-12 w-full">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-accent">NEWS18</div>
-                  <div className="text-xs text-muted">India</div>
+            <div className="relative">
+              <style jsx>{`
+                @keyframes scroll {
+                  0% {
+                    transform: translateX(0);
+                  }
+                  100% {
+                    transform: translateX(-50%);
+                  }
+                }
+                .animate-scroll {
+                  animation: scroll 30s linear infinite;
+                }
+                .animate-scroll:hover {
+                  animation-play-state: paused;
+                }
+              `}</style>
+              <div className="flex animate-scroll">
+                {/* First set of logos */}
+                <div className="flex items-center gap-12 px-6">
+                  <div className="flex items-center justify-center h-16 min-w-[140px]">
+                    <div className="text-center">
+                      <div className="text-2xl font-bold text-accent whitespace-nowrap">NEWS18</div>
+                      <div className="text-xs text-muted">India</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center h-16 min-w-[140px]">
+                    <div className="text-center">
+                      <div className="text-2xl font-bold text-accent whitespace-nowrap">NDTV</div>
+                      <div className="text-xs text-muted">India</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center h-16 min-w-[140px]">
+                    <div className="text-center">
+                      <div className="text-xl font-bold text-accent whitespace-nowrap">ABP Live</div>
+                      <div className="text-xs text-muted">News</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center h-16 min-w-[140px]">
+                    <div className="text-center">
+                      <div className="text-xl font-bold text-accent whitespace-nowrap">Outlook</div>
+                      <div className="text-xs text-muted">India</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center h-16 min-w-[140px]">
+                    <div className="text-center">
+                      <div className="text-xl font-bold text-accent whitespace-nowrap">IANS</div>
+                      <div className="text-xs text-muted">India</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center h-16 min-w-[140px]">
+                    <div className="text-center">
+                      <div className="text-lg font-bold text-accent whitespace-nowrap">Business Standard</div>
+                      <div className="text-xs text-muted">News</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center h-16 min-w-[140px]">
+                    <div className="text-center">
+                      <div className="text-xl font-bold text-accent whitespace-nowrap">ANI</div>
+                      <div className="text-xs text-muted">News</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center h-16 min-w-[140px]">
+                    <div className="text-center">
+                      <div className="text-lg font-bold text-accent whitespace-nowrap">Rajbharat</div>
+                      <div className="text-xs text-muted">News</div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-center justify-center h-12 w-full">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-accent">NDTV</div>
-                  <div className="text-xs text-muted">India</div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center h-12 w-full">
-                <div className="text-center">
-                  <div className="text-xl font-bold text-accent">ABP Live</div>
-                  <div className="text-xs text-muted">News</div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center h-12 w-full">
-                <div className="text-center">
-                  <div className="text-xl font-bold text-accent">Outlook</div>
-                  <div className="text-xs text-muted">India</div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center h-12 w-full">
-                <div className="text-center">
-                  <div className="text-xl font-bold text-accent">IANS</div>
-                  <div className="text-xs text-muted">India</div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center h-12 w-full">
-                <div className="text-center">
-                  <div className="text-lg font-bold text-accent">Business</div>
-                  <div className="text-xs text-muted">Standard</div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center h-12 w-full">
-                <div className="text-center">
-                  <div className="text-xl font-bold text-accent">ANI</div>
-                  <div className="text-xs text-muted">News</div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center h-12 w-full">
-                <div className="text-center">
-                  <div className="text-lg font-bold text-accent">Rajbharat</div>
-                  <div className="text-xs text-muted">News</div>
+                {/* Duplicate set for seamless loop */}
+                <div className="flex items-center gap-12 px-6">
+                  <div className="flex items-center justify-center h-16 min-w-[140px]">
+                    <div className="text-center">
+                      <div className="text-2xl font-bold text-accent whitespace-nowrap">NEWS18</div>
+                      <div className="text-xs text-muted">India</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center h-16 min-w-[140px]">
+                    <div className="text-center">
+                      <div className="text-2xl font-bold text-accent whitespace-nowrap">NDTV</div>
+                      <div className="text-xs text-muted">India</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center h-16 min-w-[140px]">
+                    <div className="text-center">
+                      <div className="text-xl font-bold text-accent whitespace-nowrap">ABP Live</div>
+                      <div className="text-xs text-muted">News</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center h-16 min-w-[140px]">
+                    <div className="text-center">
+                      <div className="text-xl font-bold text-accent whitespace-nowrap">Outlook</div>
+                      <div className="text-xs text-muted">India</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center h-16 min-w-[140px]">
+                    <div className="text-center">
+                      <div className="text-xl font-bold text-accent whitespace-nowrap">IANS</div>
+                      <div className="text-xs text-muted">India</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center h-16 min-w-[140px]">
+                    <div className="text-center">
+                      <div className="text-lg font-bold text-accent whitespace-nowrap">Business Standard</div>
+                      <div className="text-xs text-muted">News</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center h-16 min-w-[140px]">
+                    <div className="text-center">
+                      <div className="text-xl font-bold text-accent whitespace-nowrap">ANI</div>
+                      <div className="text-xs text-muted">News</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center h-16 min-w-[140px]">
+                    <div className="text-center">
+                      <div className="text-lg font-bold text-accent whitespace-nowrap">Rajbharat</div>
+                      <div className="text-xs text-muted">News</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
