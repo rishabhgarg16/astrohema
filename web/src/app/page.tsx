@@ -113,22 +113,6 @@ export default function Home() {
               </h3>
             </div>
             <div className="relative">
-              <style jsx>{`
-                @keyframes scroll {
-                  0% {
-                    transform: translateX(0);
-                  }
-                  100% {
-                    transform: translateX(-50%);
-                  }
-                }
-                .animate-scroll {
-                  animation: scroll 30s linear infinite;
-                }
-                .animate-scroll:hover {
-                  animation-play-state: paused;
-                }
-              `}</style>
               <div className="flex animate-scroll">
                 {/* First set of logos */}
                 <div className="flex items-center gap-12 px-6">
