@@ -2,6 +2,7 @@ import { siteConfig } from "@/data/site-config";
 import { courseSections } from "@/data/courses";
 import { CourseCard } from "@/components/course-card";
 import { Metadata } from "next";
+import { Header } from "@/components/header";
 
 export const metadata: Metadata = {
   title: "Astrology & Numerology Courses",
@@ -102,65 +103,19 @@ export default function CoursesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }}
       />
-      
-      {/* Header with top bar */}
-      <header className="border-b border-accent/10 bg-card/95 backdrop-blur-sm">
-        <div className="bg-accent text-white text-xs sm:text-sm">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-8 flex items-center justify-end">
-            <a
-              href="#lead-form"
-              className="underline underline-offset-4 font-medium"
-            >
-              Course Login
-            </a>
-          </div>
+
+      {/* Header with Course Login top bar */}
+      <div className="bg-accent text-white text-xs sm:text-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-8 flex items-center justify-end">
+          <a
+            href="#lead-form"
+            className="underline underline-offset-4 font-medium hover:text-accent-soft transition-colors"
+          >
+            Course Login
+          </a>
         </div>
-        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between bg-card">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
-              <span className="text-xl">✨</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-lg sm:text-xl font-semibold text-foreground">
-                {siteConfig.name}
-              </span>
-              <span className="text-xs text-muted hidden sm:inline">
-                Courses & Mentorship
-              </span>
-            </div>
-          </div>
-
-          <div className="hidden lg:flex items-center gap-6 text-sm font-medium">
-            <a href="/" className="hover:text-accent transition-colors">
-              Home
-            </a>
-            <span className="text-accent border-b-2 border-accent pb-1">
-              Courses
-            </span>
-            <span className="text-muted">Call Consultation</span>
-            <span className="text-muted">Ask Our Astrologer</span>
-          </div>
-
-          <div className="flex gap-2">
-            <a
-              href={`tel:${siteConfig.contact.phone}`}
-              className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent text-accent text-sm font-medium hover:bg-accent hover:text-white transition-colors"
-            >
-              <span>📞</span>
-              <span>Call</span>
-            </a>
-            <a
-              href={`https://wa.me/${siteConfig.contact.whatsapp}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent text-white text-sm font-medium hover:bg-accent/90 transition-colors"
-            >
-              <span>💬</span>
-              <span>WhatsApp</span>
-            </a>
-          </div>
-        </nav>
-      </header>
+      </div>
+      <Header />
 
       <main>
         {/* Hero */}
