@@ -76,7 +76,6 @@ export default function Home() {
         "@id": "https://astrohema.com/#business",
         "name": siteConfig.name,
         "image": "https://astrohema.com/logo.png",
-        "@id": "https://astrohema.com",
         "url": "https://astrohema.com",
         "telephone": siteConfig.contact.phone,
         "email": siteConfig.contact.email,
