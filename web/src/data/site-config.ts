@@ -8,23 +8,26 @@ export const siteConfig = {
   
   contact: {
     phone: "+918130140412",
+    phone_alternate: "+919810924630", // Secondary contact number
     email: "hello@astrohema.com",
     whatsapp: "918130140412", // Without + sign for wa.me links
     availability: {
-      weekdays: "Mon - Sat: 9:00 AM - 7:00 PM",
+      weekdays: "Mon - Sat: 9:00 AM - 6:00 PM",
       weekend: "Sunday: By appointment only"
     }
   },
 
   social: {
     linkedin: {
-      company: "https://www.linkedin.com/company/astrohema", // TODO: Replace with actual LinkedIn company page URL
-      personal: "https://www.linkedin.com/in/astro-hema"      // TODO: Replace with founder's LinkedIn profile URL
+      company: "https://www.linkedin.com/company/astrohema", // TODO: Create LinkedIn company page
+      personal: "https://www.linkedin.com/in/astro-hema"      // TODO: Create founder's LinkedIn profile
     },
-    facebook: "https://www.facebook.com/astrohema",           // TODO: Replace with actual Facebook page URL
-    instagram: "https://www.instagram.com/astrohema",         // TODO: Replace with actual Instagram handle
-    twitter: "https://twitter.com/astrohema",                 // TODO: Replace with actual Twitter/X handle
-    youtube: "https://www.youtube.com/@astrohema"             // TODO: Replace with actual YouTube channel
+    facebook: "https://www.facebook.com/astrohema",
+    instagram: "https://www.instagram.com/astrohema708",
+    twitter: "https://twitter.com/astrohema",                 // TODO: Create Twitter/X account
+    youtube: "https://www.youtube.com/@AstroHema",
+    telegram: "https://t.me/astrohema",
+    whatsapp_channel: "https://whatsapp.com/channel/0029VaBKyju8kyyT7lfM283i"
   },
 
   stats: [
