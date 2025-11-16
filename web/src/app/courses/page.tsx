@@ -1,10 +1,108 @@
 import { siteConfig } from "@/data/site-config";
 import { courseSections } from "@/data/courses";
 import { CourseCard } from "@/components/course-card";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Astrology & Numerology Courses",
+  description: "Learn professional Astrology, Numerology, Vastu, Tarot, and Lal Kitab. Beginner to advanced level courses with live guidance and practical case studies.",
+  keywords: [
+    'astrology course',
+    'numerology course',
+    'Vastu course',
+    'Tarot course',
+    'Lal Kitab course',
+    'online astrology training',
+    'learn astrology',
+    'occult science courses',
+    'astrology certification',
+  ],
+  alternates: {
+    canonical: 'https://astrohema.com/courses',
+    languages: {
+      'en-IN': 'https://astrohema.com/courses',
+      'hi-IN': 'https://astrohema.com/courses',
+    },
+  },
+  openGraph: {
+    title: "Astrology & Numerology Courses | Astro Hema",
+    description: "Learn professional Astrology, Numerology, Vastu, Tarot, and Lal Kitab with expert guidance.",
+    url: 'https://astrohema.com/courses',
+    type: 'website',
+    images: [
+      {
+        url: '/og-image-courses.png',
+        width: 1200,
+        height: 630,
+        alt: 'Astro Hema Courses',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Astrology & Numerology Courses | Astro Hema",
+    description: "Learn professional Astrology, Numerology, Vastu, Tarot, and Lal Kitab with expert guidance.",
+    images: ['/og-image-courses.png'],
+  },
+};
 
 export default function CoursesPage() {
+  const coursesStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Astro Hema Courses",
+    "description": "Professional courses in Astrology, Numerology, Vastu, and other occult sciences",
+    "itemListElement": courseSections.flatMap((section, sectionIdx) =>
+      section.courses.map((course, courseIdx) => ({
+        "@type": "ListItem",
+        "position": sectionIdx * 10 + courseIdx + 1,
+        "item": {
+          "@type": "Course",
+          "name": course.title,
+          "provider": {
+            "@type": "Organization",
+            "name": siteConfig.name,
+            "url": "https://astrohema.com"
+          },
+          "courseLevel": course.level,
+          "availableLanguage": ["Hindi", "English"],
+          "courseMode": "online"
+        }
+      }))
+    )
+  };
+
+  const breadcrumbStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://astrohema.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Courses",
+        "item": "https://astrohema.com/courses"
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen bg-background">
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(coursesStructuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }}
+      />
+      
       {/* Header with top bar */}
       <header className="border-b border-accent/10 bg-card/95 backdrop-blur-sm">
         <div className="bg-accent text-white text-xs sm:text-sm">
@@ -189,16 +287,10 @@ export default function CoursesPage() {
                     dates, fees, syllabus and offers.
                   </p>
                 </div>
-                {/* 
-                  NOTE:
-                  Replace FORM_ENDPOINT below with your real endpoint from a form service like Formspree.
-                  Example (after creating a form on Formspree):
-                  const FORM_ENDPOINT = "https://formspree.io/f/abcdxyz";
-                */}
                 <form
                   className="grid gap-4 sm:grid-cols-2"
                   method="POST"
-                  action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+                  action="https://formspree.io/f/xanyqveo"
                 >
                   <input
                     type="hidden"

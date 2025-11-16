@@ -16,6 +16,17 @@ export const siteConfig = {
     }
   },
 
+  social: {
+    linkedin: {
+      company: "https://www.linkedin.com/company/astrohema", // TODO: Replace with actual LinkedIn company page URL
+      personal: "https://www.linkedin.com/in/astro-hema"      // TODO: Replace with founder's LinkedIn profile URL
+    },
+    facebook: "https://www.facebook.com/astrohema",           // TODO: Replace with actual Facebook page URL
+    instagram: "https://www.instagram.com/astrohema",         // TODO: Replace with actual Instagram handle
+    twitter: "https://twitter.com/astrohema",                 // TODO: Replace with actual Twitter/X handle
+    youtube: "https://www.youtube.com/@astrohema"             // TODO: Replace with actual YouTube channel
+  },
+
   stats: [
     { value: "20+", label: "Years Experience" },
     { value: "500+", label: "Happy Clients" },
