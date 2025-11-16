@@ -1,5 +1,6 @@
 import { siteConfig } from "@/data/site-config";
 import { HomeHero } from "@/components/home-hero";
+import { Header } from "@/components/header";
 
 export default function Home() {
   const faqData = [
@@ -200,51 +201,9 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      
+
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-card/90 backdrop-blur-sm border-b border-accent/10">
-        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
-              <span className="text-xl">✨</span>
-            </div>
-            <span className="text-xl font-semibold text-foreground">
-              {siteConfig.name}
-            </span>
-          </div>
-
-          <div className="hidden md:flex items-center gap-6 text-sm font-medium">
-            <a href="/" className="text-accent border-b-2 border-accent pb-1">
-              Home
-            </a>
-            <a
-              href="/courses"
-              className="text-muted hover:text-accent transition-colors pb-1"
-            >
-              Courses
-            </a>
-          </div>
-
-          <div className="flex gap-3">
-            <a
-              href={`tel:${siteConfig.contact.phone}`}
-              className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-full border border-accent text-accent font-medium hover:bg-accent hover:text-white transition-colors"
-            >
-              <span>📞</span>
-              <span>Call Now</span>
-            </a>
-            <a
-              href={`https://wa.me/${siteConfig.contact.whatsapp}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent text-white font-medium hover:bg-accent/90 transition-colors"
-            >
-              <span>💬</span>
-              <span>WhatsApp</span>
-            </a>
-          </div>
-        </nav>
-      </header>
+      <Header />
 
       <main>
         <HomeHero />
@@ -430,25 +389,36 @@ export default function Home() {
               </p>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {siteConfig.services.map((service, idx) => (
-                <div
-                  key={idx}
-                  className="bg-card rounded-2xl p-6 border border-accent/10 hover:border-accent/30 hover:shadow-lg transition-all group"
-                >
-                  <div className="text-4xl mb-4">{service.icon}</div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-accent transition-colors">
-                    {service.title}
-                  </h3>
-                  <p className="text-muted mb-4">{service.description}</p>
+              {siteConfig.services.map((service, idx) => {
+                // Map service titles to dedicated pages
+                const getServiceLink = (title: string) => {
+                  if (title === "Kundali Analysis") return "/consultation";
+                  if (title === "Match Making") return "/services/match-making";
+                  if (title === "Career & Finance") return "/consultation";
+                  if (title === "Love & Relationship") return "/services/love-consultation";
+                  if (title === "Health Guidance") return "/consultation";
+                  if (title === "Remedies & Solutions") return "/services/gemstones";
+                  return "/consultation";
+                };
+
+                return (
                   <a
-                    href={`https://wa.me/${siteConfig.contact.whatsapp}`}
-                    className="inline-flex items-center gap-2 text-accent font-medium hover:underline"
+                    key={idx}
+                    href={getServiceLink(service.title)}
+                    className="bg-card rounded-2xl p-6 border border-accent/10 hover:border-accent/30 hover:shadow-lg transition-all group block"
                   >
-                    <span>Book Now</span>
-                    <span>→</span>
+                    <div className="text-4xl mb-4">{service.icon}</div>
+                    <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-accent transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-muted mb-4">{service.description}</p>
+                    <span className="inline-flex items-center gap-2 text-accent font-medium group-hover:underline">
+                      <span>Learn More</span>
+                      <span>→</span>
+                    </span>
                   </a>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>
@@ -831,10 +801,12 @@ export default function Home() {
             <div>
               <h4 className="font-semibold mb-4">Services</h4>
               <ul className="space-y-2 text-sm opacity-80">
-                <li>Kundali Analysis</li>
-                <li>Vastu Consultation</li>
-                <li>Match Making</li>
-                <li>Career Guidance</li>
+                <li><a href="/consultation" className="hover:text-accent transition-colors">Kundali Analysis</a></li>
+                <li><a href="/services/match-making" className="hover:text-accent transition-colors">Match Making</a></li>
+                <li><a href="/services/love-consultation" className="hover:text-accent transition-colors">Love & Relationships</a></li>
+                <li><a href="/services/gemstones" className="hover:text-accent transition-colors">Gemstone Consultation</a></li>
+                <li><a href="/services/daily-horoscope" className="hover:text-accent transition-colors">Daily Horoscope</a></li>
+                <li><a href="/courses" className="hover:text-accent transition-colors">Astrology Courses</a></li>
               </ul>
             </div>
             <div>

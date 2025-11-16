@@ -36,8 +36,8 @@
 
 **Headline (220 characters max):**
 ```
-🪐 Vedic Astrologer | Vastu Expert | Helping 500+ Clients Find Life Clarity 
-🔮 Kundali Analysis | Career Guidance | Match Making | Astrology Courses
+🪐 Vedic Astrologer & Vastu Expert | Transforming Lives Through Ancient Wisdom
+🔮 Kundali Readings | Vastu Solutions | Numerology | Gemstones | Occult Sciences | Professional Astrology Training
 ```
 
 **About Section (2,600 characters max):**
@@ -149,81 +149,90 @@ Description:
 
 **Tagline (120 characters):**
 ```
-Authentic Vedic Astrology | Vastu | Numerology | Life Guidance for Modern Families 🪐
+India's Trusted Astrologer for Vedic Wisdom | Kundali | Vastu | Numerology | Professional Training 🪐
 ```
 
 **About Section (2,000 characters max):**
 ```
-🌟 Welcome to Astro Hema - Your Guide to Life Clarity Through Ancient Wisdom
+🌟 Welcome to Astro Hema - Where Ancient Wisdom Meets Modern Life
 
-We are a trusted name in Vedic astrology, Vastu consultation, and numerology, serving 500+ happy clients across India and globally.
+At Astro Hema, we believe astrology is not just tradition — it's a sacred science with the power to guide, heal, and transform lives. We exist to make spiritual wisdom accessible, practical, and life-changing for individuals, families, and businesses across the globe.
 
-🔮 OUR SERVICES:
-━━━━━━━━━━━━━━━
-• Kundali Analysis & Birth Chart Reading
-• Vastu Consultation for Homes & Offices
-• Marriage Compatibility & Match Making
-• Career Guidance & Business Astrology
-• Numerology & Name Correction
-• Remedies for Doshas & Life Challenges
-• Baby Name Suggestions
-
-🎓 COURSES & TRAINING:
-━━━━━━━━━━━━━━━━━━
-We offer comprehensive courses for aspiring astrologers:
-✓ Basic Astrology Course
-✓ Advanced Astrology Mentorship
-✓ Numerology Course
-✓ Vastu Shastra Course
-✓ Lal Kitab Course
-✓ Tarot Reading Course
-
-📊 OUR TRACK RECORD:
+🔮 WHO WE ARE:
 ━━━━━━━━━━━━━━━━
-✅ 20+ years of experience
-✅ 500+ satisfied clients
-✅ 1000+ accurate predictions
-✅ 95% satisfaction rate
-✅ Featured in major media outlets
+With 20+ years of legacy and trust, Astro Hema is your lifelong spiritual partner for Vedic astrology, Vastu solutions, and occult sciences. Founded by [Your Name], a certified Vedic astrologer and spiritual mentor, we have helped 500+ clients across India and globally make better decisions in career, marriage, health, and finance.
+
+📊 OUR COMPREHENSIVE SERVICES:
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+✓ Personalized Kundali Analysis & Birth Chart Reading
+✓ Vastu Consultation for Homes, Offices & Factories
+✓ Marriage Compatibility & Match Making (Kundali Matching)
+✓ Career & Business Astrology Guidance
+✓ Numerology & Name Correction Services
+✓ Gemstone Consultation & Recommendations
+✓ Remedial Astrology & Spiritual Healing
+✓ Baby Name Suggestions (Numerology-based)
+✓ Muhurta Selection (Auspicious Timing)
+✓ Lal Kitab Remedies
+
+🎓 PROFESSIONAL TRAINING & CERTIFICATION:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Transform your passion into profession with our flagship courses:
+→ Vedic Astrology (Basic to Advanced Levels)
+→ Professional Numerology Certification
+→ Vastu Shastra Practitioner Course
+→ Lal Kitab Mastery Program
+→ Tarot Reading Professional Course
+→ Palmistry & Face Reading
+
+📈 OUR IMPACT & REACH:
+━━━━━━━━━━━━━━━━━━━━
+• 20+ Years of Authentic Practice
+• 500+ Satisfied Clients Globally
+• 1000+ Accurate Kundali Readings
+• 95% Client Satisfaction Rate
+• Featured in Leading Media Outlets
+• Serving Clients in 15+ Countries
 
 💡 OUR PHILOSOPHY:
-━━━━━━━━━━━━━━━
-We believe astrology is pure science that offers clarity and direction. Our consultations blend traditional Vedic wisdom with practical, modern solutions tailored to your unique life path.
+━━━━━━━━━━━━━━━━━
+We integrate timeless Vedic principles with modern delivery to provide personalized, actionable guidance. Every consultation is tailored to your unique birth chart, ensuring precise predictions and effective remedies.
 
-📞 CONNECT WITH US:
-━━━━━━━━━━━━━━━━
+🌐 CONNECT WITH US:
+━━━━━━━━━━━━━━━━━━━
 📱 Phone/WhatsApp: +918130140412
 📧 Email: hello@astrohema.com
-🌐 Website: astrohema.com
-⏰ Mon-Sat: 9 AM - 7 PM IST
+🌍 Website: www.astrohema.com
+⏰ Availability: Mon-Sat, 9 AM - 7 PM IST
 
-🔔 Follow us for daily astrological insights, Vastu tips, and life guidance!
+🌟 Our Mission: To awaken divine clarity and help every soul live a spiritually aligned and successful life.
 
-#VedicAstrology #VastuConsultant #Numerology #AstrologyCourses #LifeGuidance
+Follow us for daily astrological insights, Vastu wisdom, and spiritual guidance! 🙏
+
+#VedicAstrology #AstrologyCourses #VastuConsultant #Numerology #SpiritualGuidance #LifeTransformation
 ```
 
-**Logo:**
-- Size: 300 x 300 px (square)
-- Your ✨ symbol or create a proper logo
-- Background: Transparent PNG
-- Use brand colors (orange/amber)
-
-**Cover Image:**
-- Size: 1128 x 191 px
-- Include: Services offered, contact info, tagline
-- Keep text readable on mobile
-
-**Specialties (Add up to 20):**
+**Specialties (Add all 20):**
 - Vedic Astrology
-- Kundali Reading
+- Kundali Reading & Analysis
 - Vastu Consultation
-- Numerology
-- Match Making
-- Career Astrology
-- Astrology Courses
-- Life Coaching
-- Spiritual Guidance
+- Numerology Services
+- Gemstone Recommendations
+- Lal Kitab Remedies
+- Marriage Compatibility (Kundali Matching)
+- Career & Business Astrology
+- Spiritual Healing & Energy Cleansing
+- Remedial Astrology
+- Professional Astrology Training
+- Occult Science Courses
+- Palmistry & Face Reading
+- Tarot Card Reading
 - Birth Chart Analysis
+- Muhurta Selection (Auspicious Timing)
+- Name Correction (Numerology)
+- Relationship Guidance
+- Personal Growth Mentorship
+- Online Astrology Consultations
 
 ---
 
