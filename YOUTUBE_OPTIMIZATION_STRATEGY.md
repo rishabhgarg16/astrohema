@@ -36,10 +36,10 @@
 Get Accurate Kundali Reading, Vastu Consultation, Match Making & Life Solutions from Delhi's Most Trusted Astrologer
 
 📞 BOOK CONSULTATION:
-India: +91-9810924630 / +91-8130140412
+India: +91-9810792463 / +91-8130140412
 WhatsApp: https://wa.me/918130140412
 Website: https://astrohema.com
-⏰ Mon-Sat: 9 AM - 6 PM IST
+⏰ Mon-Sat: 9 AM - 7 PM IST
 
 🎓 LEARN ASTROLOGY:
 Online Courses in Vedic Astrology, Numerology, Vastu, Tarot & Lal Kitab
@@ -84,8 +84,8 @@ WhatsApp Channel: https://whatsapp.com/channel/0029VaBKyju8kyyT7lfM283i
 
 हम सभी प्रकार की ज्योतिष सेवाएं प्रदान करते हैं - कुंडली पढ़ना, कुंडली मिलान, वास्तु परामर्श, अंकज्योतिष और बहुत कुछ। दिल्ली में स्थित। 20+ वर्षों का अनुभव।
 
-परामर्श बुक करें: +91-9810924630 / +91-8130140412
-समय: सुबह 9 बजे से शाम 6 बजे (सोमवार-शनिवार)
+परामर्श बुक करें: +91-9810792463 / +91-8130140412
+समय: सुबह 9 बजे से शाम 7 बजे (सोमवार-शनिवार)
 
 #VedicAstrology #Kundali #Vastu #Numerology #DailyHoroscope #AstrologyCourses #AstroHema
 ```
@@ -287,10 +287,10 @@ English: "Daily Horoscope [Date] | All Zodiac Signs | Astro Hema"
 
 📞 BOOK YOUR PERSONAL CONSULTATION:
 WhatsApp: https://wa.me/918130140412
-Call: +91-9810924630 / +91-8130140412
+Call: +91-9810792463 / +91-8130140412
 Website: https://astrohema.com
 
-⏰ Available: Mon-Sat, 9 AM - 6 PM IST
+⏰ Available: Mon-Sat, 9 AM - 7 PM IST
 
 ✨ TODAY'S TOPIC:
 [Detailed description with timestamps]
@@ -349,10 +349,10 @@ Telegram: https://t.me/astrohema
 📞 BOOK YOUR CONSULTATION NOW:
 
 WhatsApp (Fastest): https://wa.me/918130140412
-Call: +91-9810924630 / +91-8130140412
+Call: +91-9810792463 / +91-8130140412
 Website: https://astrohema.com
 
-⏰ Mon-Sat: 9 AM - 6 PM IST
+⏰ Mon-Sat: 9 AM - 7 PM IST
 
 💬 Got questions? Reply to this comment!
 👍 Like this video if it helped you!

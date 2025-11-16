@@ -8,18 +8,18 @@ export const siteConfig = {
   
   contact: {
     phone: "+918130140412",
-    phone_alternate: "+919810924630", // Secondary contact number
+    phone_alternate: "+919810792463", // Secondary contact number
     email: "hello@astrohema.com",
     whatsapp: "918130140412", // Without + sign for wa.me links
     availability: {
-      weekdays: "Mon - Sat: 9:00 AM - 6:00 PM",
+      weekdays: "Mon - Sat: 9:00 AM - 7:00 PM",
       weekend: "Sunday: By appointment only"
     }
   },
 
   social: {
     linkedin: {
-      company: "https://www.linkedin.com/company/astrohema", // TODO: Create LinkedIn company page
+      company: "https://www.linkedin.com/company/astrohema",
       personal: "https://www.linkedin.com/in/astro-hema"      // TODO: Create founder's LinkedIn profile
     },
     facebook: "https://www.facebook.com/astrohema",
