@@ -12,6 +12,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: `${baseUrl}/free-vastu-consultation`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.95, // High priority for lead generation page
+    },
+    {
       url: `${baseUrl}/consultation`,
       lastModified: currentDate,
       changeFrequency: 'weekly',

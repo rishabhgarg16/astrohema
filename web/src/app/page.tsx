@@ -1,6 +1,9 @@
 import { siteConfig } from "@/data/site-config";
 import { HomeHero } from "@/components/home-hero";
 import { Header } from "@/components/header";
+import { FreeConsultationBanner } from "@/components/free-consultation-banner";
+import { WhatsAppTestimonials } from "@/components/whatsapp-testimonials";
+import { consultationWhatsAppTestimonials } from "@/data/whatsapp-testimonials";
 
 export default function Home() {
   const faqData = [
@@ -447,6 +450,9 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Free First Consultation Banner */}
+        <FreeConsultationBanner type="general" />
+
         {/* Testimonials */}
         <section className="py-16 sm:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -473,6 +479,13 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* WhatsApp Testimonials */}
+        <WhatsAppTestimonials
+          testimonials={consultationWhatsAppTestimonials}
+          title="Real Client Messages on WhatsApp 💬"
+          description="See what our clients are saying about their consultation experience"
+        />
 
         {/* CTA Section */}
         <section className="py-16 sm:py-24 bg-gradient-to-br from-accent to-accent/80 text-white">

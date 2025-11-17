@@ -3,6 +3,8 @@ import { courseSections } from "@/data/courses";
 import { CourseCard } from "@/components/course-card";
 import { Metadata } from "next";
 import { Header } from "@/components/header";
+import { WhatsAppTestimonials } from "@/components/whatsapp-testimonials";
+import { courseWhatsAppTestimonials } from "@/data/whatsapp-testimonials";
 
 export const metadata: Metadata = {
   title: "Astrology & Numerology Courses",
@@ -222,6 +224,13 @@ export default function CoursesPage() {
             </div>
           </section>
         ))}
+
+        {/* WhatsApp Testimonials from Students */}
+        <WhatsAppTestimonials
+          testimonials={courseWhatsAppTestimonials}
+          title="Real Student Feedback on WhatsApp 💬"
+          description="See what our students are saying about their learning experience with Astro Hema courses"
+        />
 
         {/* Lead generation form */}
         <section id="lead-form" className="py-16 sm:py-20 bg-accent-soft">

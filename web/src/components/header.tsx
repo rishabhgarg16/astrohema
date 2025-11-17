@@ -41,6 +41,14 @@ export function Header() {
             </button>
             <div className="absolute top-full left-0 mt-2 w-56 bg-card rounded-xl border border-accent/10 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
               <div className="py-2">
+                {/* Highlighted FREE Offer */}
+                <Link
+                  href="/free-vastu-consultation"
+                  className="block px-4 py-2 text-sm font-semibold bg-gradient-to-r from-accent/20 to-accent/10 text-accent hover:from-accent/30 hover:to-accent/20 transition-colors border-l-2 border-accent"
+                >
+                  🎁 FREE Vastu Consultation
+                </Link>
+                <div className="border-t border-accent/10 my-2"></div>
                 <Link
                   href="/consultation"
                   className="block px-4 py-2 text-sm text-foreground hover:bg-accent-soft hover:text-accent transition-colors"
